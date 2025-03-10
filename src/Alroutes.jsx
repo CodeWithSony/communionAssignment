@@ -8,7 +8,7 @@ const Alroutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
+      <Route path="/about" element={<Home />} />
       <Route path="/event" element={<Event />} />
       {/* <Route exact path="/Auth" element={<Auth />} /> */}
       {/* 

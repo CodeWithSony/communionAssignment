@@ -100,7 +100,7 @@ const EventPage = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto p-6 z-0 relative">
+    <div className="max-w-7xl mx-auto p-6 z-0 relative">
       <header className="flex justify-between items-center py-4 border-b">
         <h1 className="text-3xl font-bold">Upcoming Events</h1>
         <button
@@ -118,7 +118,7 @@ const EventPage = () => {
             key={category}
             className={`px-4 py-2 rounded-lg transition ${
               selectedCategory === category
-                ? "bg-blue-500 text-white"
+                ? "bg-black text-white"
                 : "bg-gray-200 hover:bg-gray-300"
             }`}
             onClick={() => filterEvents(category)}
@@ -133,16 +133,17 @@ const EventPage = () => {
           filteredEvents.map((event) => (
             <div
               key={event.id}
-              className="bg-white shadow-md rounded-lg overflow-hidden"
+              className="bg-white shadow-md rounded-lg overflow-hidden p-4 border"
             >
               <img
                 src={event.image}
                 alt={event.title}
-                className="w-full h-48 object-cover"
+                className="w-full object-cover rounded-md"
+                style={{ height: "300px" }}
               />
-              <div className="p-4">
+              <div className="py-3">
                 <span
-                  className={`px-3 py-1 text-sm rounded-full ${
+                  className={`px-3 py-1 text-sm rounded-md ${
                     event.category === "Free"
                       ? "bg-green-200 text-green-800"
                       : "bg-blue-200 text-blue-800"
