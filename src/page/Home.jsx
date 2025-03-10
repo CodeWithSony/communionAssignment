@@ -32,7 +32,7 @@ const Home = () => {
             engaging, and connected than ever before!
           </p>
           <Link
-            to="/events"
+            to="/event"
             className="bg-blue-600 hover:bg-blue-800 text-white px-6 py-3 rounded-lg text-lg font-semibold inline-block transition"
           >
             Explore Events
