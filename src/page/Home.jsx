@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="bg-white min-h-screen flex flex-col items-center text-center px-6 py-12 md:px-20">
-      {/* Title */}
       <motion.h1
         className="text-4xl md:text-6xl font-bold text-black"
         initial={{ opacity: 0, y: -30 }}
@@ -17,9 +16,7 @@ const Home = () => {
         Bridging gaps between faiths with tech and a dash of fun!
       </p>
 
-      {/* Hero Section */}
       <div className="mt-10 flex flex-col md:flex-row items-center justify-center gap-8 w-full max-w-5xl">
-        {/* Text Section */}
         <motion.div
           className="md:w-1/2 text-left space-y-4"
           initial={{ opacity: 0, x: -50 }}
@@ -42,7 +39,6 @@ const Home = () => {
           </Link>
         </motion.div>
 
-        {/* Image Section */}
         <motion.div
           className="md:w-1/2 flex justify-center"
           initial={{ opacity: 0, x: 50 }}

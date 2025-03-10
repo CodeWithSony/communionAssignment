@@ -13,7 +13,6 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* Desktop Menu */}
       <ul className="hidden md:flex space-x-6 text-2xl font-bold text-blue-700">
         <li>
           <Link to="/" className="hover:text-gray-400 transition">
@@ -32,7 +31,6 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* Mobile Menu Button */}
       <button
         className="md:hidden text-black focus:outline-none"
         onClick={() => setMenuOpen(!menuOpen)}
@@ -40,13 +38,11 @@ const Navbar = () => {
         {menuOpen ? <X size={28} /> : <Menu size={28} />}
       </button>
 
-      {/* Mobile Sidebar Menu */}
       <div
         className={`fixed top-0 right-0 h-full w-64 bg-gray-900 shadow-lg transform ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out md:hidden`}
       >
-        {/* Close Button */}
         <button
           className="absolute top-4 right-4 text-white"
           onClick={() => setMenuOpen(false)}
@@ -54,7 +50,6 @@ const Navbar = () => {
           <X size={28} />
         </button>
 
-        {/* Mobile Menu Links */}
         <ul className="flex flex-col space-y-6 mt-16 text-center text-white text-lg">
           <li>
             <Link
